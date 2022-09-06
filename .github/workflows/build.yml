@@ -33,7 +33,7 @@ jobs:
         image: porkbun-webhook
         tags: ${{ steps.meta.outputs.tags }}
         labels: ${{ steps.meta.outputs.labels }}
-        arch: amd64,aarch64
+        archs: amd64, arm64
         containerfiles: |
           ./Dockerfile
 
